@@ -1,0 +1,36 @@
+{
+  "float": [
+    {
+      "name": "login_image_size",
+      "value": "78vp"
+    },
+    {
+      "name": "login_btn_size",
+      "value": "22vp"
+    },
+    {
+      "name": "login_input_width",
+      "value": "300vp"
+    },
+    {
+      "name": "login_input_height",
+      "value": "58vp"
+    },
+    {
+      "name": "login_btn_width",
+      "value": "300vp"
+    },
+    {
+      "name": "login_btn_height",
+      "value": "58vp"
+    },
+    {
+      "name": "login_otherImage_width",
+      "value": "48vp"
+    },
+    {
+      "name": "login_otherImage_height",
+      "value": "48vp"
+    }
+  ]
+}

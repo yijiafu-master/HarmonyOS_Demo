@@ -1,0 +1,8 @@
+{
+  "src": [
+    "view/Login",
+    "view/Resister",
+    "view/My",
+    "pages/Home"
+  ]
+}

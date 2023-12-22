@@ -1,0 +1,37 @@
+{
+  "string": [
+    {
+      "name": "login_text",
+      "value": "登录页面"
+    },
+    {
+      "name": "login_desc",
+      "value": "登录账号以使用更多服务"
+    },
+    {
+      "name": "input_placeholder",
+      "value": "请输入账号"
+    },
+    {
+      "name": "input_pwd_placeholder",
+      "value": "请输入密码"
+    },
+    {
+      "name": "login_iphone",
+      "value": "短信验证登录"
+    },
+    {
+      "name": "login_pwd",
+      "value": "忘记密码"
+    },
+    {
+      "name": "login_resister",
+      "value": "注册账号"
+    },
+    {
+      "name": "login_btn_text",
+      "value": "登录"
+    }
+
+  ]
+}
