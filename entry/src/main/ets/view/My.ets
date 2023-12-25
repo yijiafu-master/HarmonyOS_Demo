@@ -5,13 +5,12 @@ import router from '@ohos.router'
 export default struct My {
   private value: string = 'Hello Word'
   private listData: Array<Object> = [
-    { img: $r('app.media.icon'), text: '测试1', others: true },
-    { img: $r('app.media.icon'), text: '测试2', others: false },
-    { img: $r('app.media.icon'), text: '测试3', others: false },
-    { img: $r('app.media.icon'), text: '测试4', others: false },
-    { img: $r('app.media.icon'), text: '测试5', others: false },
-    { img: $r('app.media.icon'), text: '测试6', others: false },
-    { img: $r('app.media.icon'), text: '测试7', others: false },
+    { img: $r('app.media.xiaoxi'), text: '消息接收', others: true },
+    { img: $r('app.media.shuju'), text: '数据管理', others: false },
+    { img: $r('app.media.caidan'), text: '菜单设置', others: false },
+    { img: $r('app.media.about'), text: '关于', others: false },
+    { img: $r('app.media.qingchu'), text: '清除缓存', others: false },
+    { img: $r('app.media.yinsi'), text: '隐私协议', others: false },
   ]
 
   @Builder listCell(img: Resource, text: string, others: boolean) {
@@ -30,10 +29,10 @@ export default struct My {
         }
       }.margin({ right: 10 })
     }
-    .width(340)
+    .width("100%")
     .height(40)
     .backgroundColor(Color.White)
-    .margin({ left: 20, top: 10 })
+    .margin({ top: 10 })
     .borderRadius(10)
     .justifyContent(FlexAlign.SpaceBetween)
   }
@@ -46,11 +45,10 @@ export default struct My {
         .fontWeight(FontWeight.Bold)
         .textAlign(TextAlign.Start)
         .width("100%")
-        .margin({ left: 30, top: 20 })
       Row() {
         Row() {
           Image($r("app.media.icon"))
-            .width(60).height(60).margin({ left: 20 })
+            .width(64).height(64).margin({ left: 20 })
           Column() {
             Row() {
               Text('李先生')
@@ -66,13 +64,13 @@ export default struct My {
         }
 
         Row() {
-          QRCode(this.value).width(60).height(60)
+          QRCode(this.value).width(64).height(64)
         }
         .margin({ right: 20 })
 
       }
       .height(140)
-      .width(340)
+      .width("100%")
       .backgroundColor(Color.White)
       .borderRadius(10)
       .margin({ top: 20 })
@@ -86,7 +84,7 @@ export default struct My {
       .margin({ top: 20 })
 
       Button('退出登录')
-        .width(340)
+        .width("100%")
         .height(40)
         .backgroundColor(Color.White)
         .fontColor(Color.Red)
@@ -102,5 +100,6 @@ export default struct My {
     .width("100%")
     .height("100%")
     .backgroundColor("#ffe3e3e3")
+    .padding({left:20,right:20})
   }
 }
